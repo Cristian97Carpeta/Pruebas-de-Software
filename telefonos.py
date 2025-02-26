@@ -6,10 +6,10 @@ def validar_telefono(numero):
 
 # Pruebas con assert
 def test_validar_telefono():
-    assert validar_telefono("+12-345-678-9012") == True  # Válido
-    assert validar_telefono("12-345-678-9012") == False  # Falta el "+"
-    assert validar_telefono("+123-456-789-0123") == False  # Prefijo de país incorrecto (debe ser 2 dígitos)
-    assert validar_telefono("+12-3456-789-012") == False  # Error en los bloques de números
+    assert validar_telefono("+12-345-678-9012") == True  
+    assert validar_telefono("12-345-678-9012") == False  
+    assert validar_telefono("+123-456-789-0123") == False  
+    assert validar_telefono("+12-3456-789-012") == False 
 
 
 test_validar_telefono()
